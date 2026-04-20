@@ -1,0 +1,513 @@
+
+02:59:51
+
+
+AWS Test -Feb DE Bootcamp 2026- for revision
+Hi, Kritika. When you submit this form, the owner will see your name and email address.
+Required
+1.Which EC2 security feature protects instances from unauthorized network access?
+(1 Point)
+
+IAM Roles
+
+Security Groups
+
+Key Pairs
+
+AMIs
+2.You have an EBS volume that is the root volume of an EC2 instance, and you want to take a snapshot, how can you do this while ensuring consistency between EBS volume and snapshots?
+(1 Point)
+
+You can take the snapshot while the EC2 instance is running
+
+You must stop the instance, then take the snapshot
+
+You can’t take a snapshot of a EBS that is an EC2 instance boot volume
+
+AWS will automatically take these snapshots during maintenance windows
+3.Where does AWS CodeBuild store build artefacts by default after a successful build?
+(1 Point)
+
+Amazon S3
+
+Amazon EFS
+
+Amazon RDS
+
+Amazon DynamoDB
+4.Which AWS service allows fan-out messaging to multiple SQS queues?
+(1 Point)
+
+SQS
+
+SNS
+
+Lambda
+
+Step Functions
+5.What is the purpose of the AppSpec file in AWS CodeDeploy?
+(1 Point)
+
+Defines IAM permissions for the deployment
+
+Specifies deployment lifecycle hooks and file mappings
+
+Lists the EC2 instances in the deployment group
+
+Configures CodePipeline stages
+6.Which VPC component enables private subnet instances to access the internet?
+(1 Point)
+
+Internet Gateway
+
+NAT Gateway
+
+VPC Peering
+
+Transit Gateway
+7.You are deploying an application on Amazon EC2, which must call AWS APIs. What method should you use to securely pass credentials to the application?
+(1 Point)
+
+PassAPI credentials to the instance using Instance userdata.
+
+StoreAPI credentials as an object in Amazon S3.
+
+Embedthe API credentials into your application.
+
+AssignIAM roles to the EC2 Instances.
+8.If you launch an instance into a VPC that has an instance tenancy of a ______________, your instance is automatically a Dedicated Instance, regardless of the tenancy of the instance.
+(1 Point)
+
+shared instance
+
+dedicated instance
+
+default instance
+
+new instance
+9.You are using an On-Demand EC2 instance to host a legacy web application that uses an Amazon Instance Store-Backed AMI. The web application should be decommissioned as soon as possible and hence, you need to terminate the EC2 instance. When the instance is terminated, what happens to the data on the root volume?
+(1 Point)
+
+Data is automatically saved as an EBS snapshot
+
+Data is automatically saved as an EBS volume
+
+Data is automatically deleted
+
+Data is unavailable until the instance is restarted
+10.Which VPC component enables private subnet instances to access the internet?
+(1 Point)
+
+Internet Gateway
+
+NAT Gateway
+
+VPC Peering
+
+Transit Gateway
+11.Amazon S3 offers encryption services for which types of data?
+(1 Point)
+
+data in flight
+
+data at client
+
+data at rest
+
+a and c
+12.What does a VPC CIDR block define?
+(1 Point)
+
+Number of subnets
+
+IP address range
+
+Routing policy
+
+Availability Zones
+13.What EC2 instance attribute would allow you to pass a script to instruct the instance to install a software?
+(1 Point)
+
+EC2 tags
+
+This needs to be done manually or through an application after the instance is launched
+
+User data
+
+None
+14.How are you billed when using EMR Serverless?
+(1 Point)
+
+Per cluster-hour regardless of usage
+
+Per vCPU-second and GB-second of memory consumed
+
+Fixed monthly fee
+
+Per S3 request made by the job
+15.You need to start using resources in AWS to build a big data processing system. Which one of the following services would you ideally use for this requirement?
+(1 Point)
+
+AWS DynamoDB
+
+AWS EMR
+
+AWS ECS
+
+AWS Glue
+16.Which of the following is the most secure way of giving access to AWS services to applications running on Ec2 instances?
+(1 Point)
+
+Creating Service users
+
+Creating service groups
+
+Roles
+
+Attaching policies to applications
+17.Which RDS engine supports automatic scaling of compute capacity?
+(1 Point)
+
+MY SQL
+
+PostgreSQL
+
+Aurora Serverless
+
+Maria DB
+18.What is the default state of outbound rules in a security group?
+(1 Point)
+
+Deny all
+
+Allow all
+
+Deny HTTP only
+
+Allow VPC traffic only
+19.Which are components of Elastic MapReduce ?
+(1 Point)
+
+Master Nodes
+
+Core Nodes
+
+Task Nodes
+
+All the above
+20.Kinesis Data Firehose can automatically convert incoming JSON data to which columnar format before delivering to S3?
+(1 Point)
+
+CSV
+
+XML
+
+Parquet or ORC
+
+Avro
+21.Where does Amazon MWAA store DAG files that the Airflow scheduler picks up automatically?
+(1 Point)
+
+Amazon EFS
+
+An Amazon S3 bucket configured in the MWAA environment
+
+Amazon EBS volume
+
+Amazon DynamoDB table
+22.You have created a VPC with CIDR 10.0.0.0/24. The VPC has two subnets: public (10.0.0.0/25) and private (10.0.0.128/25). For an anticipated project you want to increase the CIDR range your VPC CIDR block, How can you do this?
+(1 Point)
+
+Change the subnet sizes to /28 subnets, then you will have more room to grow your VPC CIDR
+
+You can always change a VPC's original CIDR block as needed
+
+You can add additional VPC CIDR blocks, but can’t change the existing one
+
+Delete all the subnets first, only then you can modify the size of the VPC
+23.How do you allow a user to gain access to a specific bucket?
+(1 Point)
+
+Attach a policy to the IAM user
+
+Add a bucket policy
+
+Enable public Access on bucket
+
+All the above
+24.Redshift can provide fast query performance by leveraging _______ storage approaches and technology.
+(1 Point)
+
+Kay-Value
+
+Row
+
+Columnar
+
+Database
+25.Which file in an AWS CodeBuild project defines the build commands and phases?
+(1 Point)
+
+appspec.yml
+
+buildspec.yml
+
+Dockerfile
+
+taskdef.json
+26.Which of the below represents a use case where SQS would be a best fit?
+(1 Point)
+
+Decoupling application components to ensure that no dependency on failure of one component, and to ensure separate components can function independently from one another
+
+Automatic SMS notification to clients when a threshold of a metric is exceeded
+
+Distribute static web content to end users with low latency across multiple countries
+
+Co-ordinate work items between different human and non-human workers
+27.In EMR, which component is responsible for managing cluster resources?
+(1 Point)
+
+HDFS
+
+YARN
+
+Hive
+
+Spark Driver
+28.A CodeDeploy deployment to an Auto Scaling group should launch new instances with the new revision before terminating old ones. Which deployment type achieves this?
+(1 Point)
+
+Blue/Green
+
+In-place
+
+Rolling with additional batch
+
+Canary
+29.Which SQS feature ensures a message is delivered only once?
+(1 Point)
+
+Visibility timeout
+
+Dead-letter queue
+
+Standard queue
+
+FIFO queue
+30.During a CloudTrail analysis, it was found out that a particular IP is connecting to application number of times and seems to be suspicious. How can this be addressed ?
+(1 Point)
+
+Remove Internet Gateway.
+
+Restrict that Particular IP through Security Group.
+
+Restrict that Particular IP through Network Access Control.
+
+Restrict with Route table entry.
+31.___________ are instances of Docker images that can be run using the Docker run command.
+(1 Point)
+
+VM
+
+Containers
+
+EC2
+
+All the above
+32.What happens to a CodePipeline execution when a stage action fails?
+(1 Point)
+
+The pipeline skips the failed stage and continues
+
+The pipeline stops at the failed stage and does not proceed
+
+The pipeline automatically retries indefinitely
+
+The pipeline sends an SNS email and continues
+33.Which Route 53 routing policy distributes traffic equally across multiple resources?
+(1 Point)
+
+Weighted
+
+Failover
+
+Latency
+
+Simple
+34.One can list all of the containers on the machine via the ____________ command.
+(1 Point)
+
+docker container ls
+
+docker pc
+
+docker rm
+
+docker ls
+35.You junior AWS architect is wondering, which AWS service can be used to achieve an application architecture on AWS, where application components can be decoupled from each other, such that persistence of in-flight transactions can be achieved independent of any single application component?
+(1 Point)
+
+AWS CloudTrail
+
+SQS
+
+Amazon Redshift
+
+Amazon ElastiCache
+36.Amazon Kinesis _______ is a massively scalable and durable real-time data streaming service.
+(1 Point)
+
+Firehose
+
+Data Analytics
+
+Data Stream
+
+All of them
+37.You have launched an EC2 instance and you want to make some change to the security group rule. How will these changes be effective?
+(1 Point)
+
+Security group rules cannot be changed.
+
+Changes are automatically applied to all instances that are associated with the security group.
+
+Changes will be effective after rebooting the instances in that security group.
+
+Changes will be effective after 24-hours.
+38.What must you run in Athena after adding new partitions to an S3-backed table so queries can find the new data?
+(1 Point)
+
+VACUUM TABLE
+
+DROP TABLE
+
+ANALYZETABLE
+
+MSCK REPAIR TABLE
+39.Your EMR cluster uses 12 m4.large instances and runs 24 hours per day, but it is only used for processing and reporting during business hours. Which options can you use to reduce the costs? ​
+​
+(1 Point)
+
+Run 12 d2.8xlarge instead without turn-off
+
+Use Spot instances for task nodes when needed.
+
+Use the ReduceMapper distribution of EMR.
+
+None of the above
+40.www.picnic.com is a photo and video hosting website and they have millions of users. Which of the following is a good solution for storing big data object, by reducing costs, scaling to meet demand, and increasing the speed of innovation?
+(1 Point)
+
+AWS S3
+
+AWS RDS
+
+AWS Glacier
+
+AWS Redshift
+41.Which component of AWS is Region Specific
+(1 Point)
+
+EC2
+
+S3
+
+Athena
+
+All the above
+42.A read replica in RDS is primarily used for
+(1 Point)
+
+Fault tolerance
+
+High Availability
+
+Better Application read performance
+
+All the above
+43.Which of the following can serve as a source stage provider in AWS CodePipeline?
+(1 Point)
+
+Amazon RDS
+
+Amazon S3
+
+Amazon EC2
+
+Amazon Athena
+44.Command to check the created, modified, deleted files in git before Commit?
+(1 Point)
+
+git show
+
+git log
+
+git status
+
+All
+45.An MWAA environment needs to trigger an EMR Serverless job as part of a data pipeline DAG. Which Airflow operator would you use?
+(1 Point)
+
+EMRServerlessOperator
+
+GlueJobOperator
+
+LambdaInvokeFunctionOperator
+
+EmrServerlessStartJobRunOperator
+46.Athena uses which underlying query engine?
+(1 Point)
+
+Apache Hive
+
+My SQL
+
+Presto / Trino
+
+Apache Kafka
+47.An EMR Serverless application is idle for 10 minutes between jobs. What happens to costs during this idle period?
+(1 Point)
+
+Full cluster cost continues
+
+Costs are zero — no resources are provisioned
+
+Pre-initialised capacity is still billed
+
+Storage costs double
+48.Which S3 storage class is MOST cost-effective for long-term archival with retrieval times of several hours?
+(1 Point)
+
+Standard-IA
+
+One Zone-IA
+
+Glacier Instant Retrieval
+
+Glacier Deep Archive
+49.What are the two main components of AWS Auto Scaling?
+(1 Point)
+
+Launch configuration and Elasticity
+
+Auto scaling groups and Instance types
+
+ELB and Auto scaling groups
+
+Auto scaling groups and Launch Configurations
+50.Which RDS feature improves availability by automatically failing over to a standby instance?
+(1 Point)
+
+Read Replicas
+
+Multi-AZ deployment
+
+Automated backups
+
+Manual snapshots
+Submit
+Microsoft 365
+This content is created by the owner of the form. The data you submit will be sent to the form owner. Microsoft is not responsible for the privacy or security practices of its customers, including those of this form owner. Never give out your password.
+Microsoft Forms | AI-Powered surveys, quizzes and pollsCreate my own form
+Privacy and cookies | Terms of use
